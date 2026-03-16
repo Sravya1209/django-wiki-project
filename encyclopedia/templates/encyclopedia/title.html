@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> {{ title }} </title>
+    </head>
+    <body>
+        {% if entry %}
+            <h1> {{ entry|safe }} </h1>
+            <a href = "{% url 'edit' title %}">Edit Entry</a>
+        {% else %}
+            <h1 style = "text-align: center; color:red;"> Error </h1>
+            <h2> Page NOt Found</h2>
+        {% endif %}
+    </body>
+</html>

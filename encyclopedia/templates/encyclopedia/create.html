@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> search </title>
+    </head>
+    <body>
+        <form method = "POST" action = "{% url 'new_entry' %}" style = "text-align:center;">
+            {% csrf_token %}
+            <input type = "text" name = "title" placeholder = "enter title of entry">
+            <br> <br> <br>
+            <textarea name = "markdown_text"> </textarea>
+            <br> <br> <br>
+            <button name ="save"> save </button>
+        </form>
+    </body>
+</html>

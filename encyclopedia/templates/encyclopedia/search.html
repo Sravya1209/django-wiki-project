@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> search </title>
+    </head>
+    <body>            
+        <ul>
+            {% for entry in entries %}
+                <li> <a href = "{% url 'name' entry %}"> {{entry}}</a></li>
+            {% empty %}
+                <h2> No results found </h2>
+            {% endfor %}
+        </ul>
+    </body>
+</html>

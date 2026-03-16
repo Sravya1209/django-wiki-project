@@ -1,0 +1,1 @@
+ Spring Boot is an open-source Java framework that simplifies the creation of stand-alone, production-grade microservices and web applications, often requiring minimal configuration

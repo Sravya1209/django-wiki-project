@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> search </title>
+    </head>
+    <body>
+        <form method = "POST" action = "{% url 'edited' %}" style = "text-align:center;">
+            {% csrf_token %}
+            <input type = "text" name = "entry_title" value = "{{ title }}">
+            <textarea name = "edited_text"> {{ entry }} </textarea>
+            <br> <br> <br>
+            <button name ="save"> save </button>
+        </form>
+    </body>
+</html>
